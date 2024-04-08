@@ -123,7 +123,7 @@ public class ModelProducto implements CRUDProducto {
         List<Object> listaProducto = new ArrayList<>();
         try {
 
-            String SQL = "SELECT * FROM Producto INNER JOIN Tienda ON Tienda.id_Tienda = Producto.id_Producto ORDER BY Tienda.nombreTienda;";
+            String SQL = "SELECT * FROM Producto INNER JOIN Tienda ON Producto.FK_id_Tienda = Tienda.id_Tienda ORDER BY Tienda.nombreTienda ASC;";
 
             PreparedStatement objPrepare = objConnection.prepareStatement(SQL);
 
@@ -160,7 +160,7 @@ public class ModelProducto implements CRUDProducto {
         List<Object> listaProducto = new ArrayList<>();
         try {
 
-            String SQL = "SELECT * FROM Producto INNER JOIN Tienda ON Tienda.id_Tienda = Producto.id_Producto ORDER BY Producto.nombreProducto ASC;";
+            String SQL = "SELECT * FROM Producto INNER JOIN Tienda ON Producto.FK_id_Tienda = Tienda.id_Tienda ORDER BY Producto.nombreProducto ASC;";
 
             PreparedStatement objPrepare = objConnection.prepareStatement(SQL);
 
