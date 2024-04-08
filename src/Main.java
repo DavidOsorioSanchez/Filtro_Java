@@ -1,4 +1,5 @@
 import Controller.ClienteController;
+import Controller.ProductoController;
 import Database.ConfigDB;
 
 import javax.swing.*;
@@ -6,12 +7,12 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
 
-        int option1 = 0, option2 = 0;
+        int option1 = 0, option2 = 0, option3 = 0;
 
         do {
             option1 = Integer.parseInt(JOptionPane.showInputDialog(null, """
                     1. Administrar Cliente
-                    2. Administrar Medicos
+                    2. Administrar Producto
                     3. Administrar Citas
                     4. Administrar Pacientes
                     5. Salir
@@ -47,33 +48,47 @@ public class Main {
                     }while (option2 != 5);
 
                     break;
-//                case 2:
-//                    do {
-//                        option2 = Integer.parseInt(JOptionPane.showInputDialog(null, """
-//                                1. Añadir informacion a medico
-//                                2. Modificar medico
-//                                3. Borrar medico
-//                                4. Listar medico
-//                                5. Salir
-//
-//                                Elige la opcion que mas te conviene.
-//                                """));
-//                        switch (option2){
-//                            case 1:
-//                                MedicoController.insert();
-//                                break;
-//                            case 2:
-//                                MedicoController.update();
-//                                break;
-//                            case 3:
-//                                MedicoController.borrar();
-//                                break;
-//                            case 4:
-//                                MedicoController.listar();
-//                                break;
-//                        }
-//                    }while (option2 != 5);
-//                    break;
+                case 2:
+                    do {
+                        option2 = Integer.parseInt(JOptionPane.showInputDialog(null, """
+                                1. Añadir Producto
+                                2. Modificar Producto
+                                3. Borrar Producto
+                                4. Listar Producto
+                                5. Salir
+
+                                Elige la opcion que mas te conviene.
+                                """));
+                        switch (option2){
+                            case 1:
+                                ProductoController.insert();
+                                break;
+                            case 2:
+                                ProductoController.update();
+                                break;
+                            case 3:
+                                ProductoController.borrar();
+                                break;
+                            case 4:
+                                do {
+                                    option3 = Integer.parseInt(JOptionPane.showInputDialog(null, """
+                                            1. Listar por Nombre.
+                                            2. Listar por tienda.
+                                            3. Salir.
+                                            """));
+                                    switch (option3){
+                                        case 1:
+                                            ProductoController.listarNombre();
+                                            break;
+                                        case 2:
+                                            ProductoController.listarTienda();
+                                            break;
+                                    }
+                                }while (option3 != 3);
+                                break;
+                        }
+                    }while (option2 != 5);
+                    break;
 //                case 3:
 //                    do {
 //                        option2 = Integer.parseInt(JOptionPane.showInputDialog(null, """

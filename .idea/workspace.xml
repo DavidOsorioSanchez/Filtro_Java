@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ab5f053-750a-4200-919f-372f6a1118df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Filtro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Database/CRUDCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Database/ConfigDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/EntityCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/ModelCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Util/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ProductoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/TiendaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/CRUDProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/CRUDTienda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/EntityProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/EntityTienda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/ModelProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/ModelTienda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,8 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/riwip4o-017/Documents/David_Riwi/mysql-connector-j-8.3.0.jar",
     "onboarding.tips.debug.path": "/home/riwip4o-017/Documents/David_Riwi/Java/tareasRiwi/entregableLibreria/Filtro/src/Main.java",
