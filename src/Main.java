@@ -13,9 +13,7 @@ public class Main {
             option1 = Integer.parseInt(JOptionPane.showInputDialog(null, """
                     1. Administrar Cliente
                     2. Administrar Producto
-                    3. Administrar Citas
-                    4. Administrar Pacientes
-                    5. Salir
+                    3. Salir
                     
                     Eligue la opcion que mas te conviene.
                     """));
@@ -117,7 +115,7 @@ public class Main {
 //                    }while (option2 != 5);
 //                    break;
             }
-        }while (option1 != 5);
+        }while (option1 != 3);
 
 
     }

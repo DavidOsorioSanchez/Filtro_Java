@@ -65,7 +65,9 @@ public class ProductoController {
 
         EntityProducto objSelected = (EntityProducto) JOptionPane.showInputDialog(null, "selecciona un producto","",JOptionPane.QUESTION_MESSAGE, null,optionsborrar,optionsborrar[0]);
 
+        System.out.println(objSelected);
         instaceModel().eliminarProducto(objSelected);
+
     }
 
     public static void update(){

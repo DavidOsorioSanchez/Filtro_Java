@@ -34,6 +34,7 @@ public class ModelProducto implements CRUDProducto {
             ResultSet objResult = objPrepare.getGeneratedKeys();
             while (objResult.next()){
                 objMolde.setID_Producto(objResult.getInt(1));
+                System.out.println(objResult.getInt(1));
             }
 
             objPrepare.close();
@@ -68,6 +69,7 @@ public class ModelProducto implements CRUDProducto {
             objPrepare.setInt(5,objmolde.getID_Producto());
 
             int lineasAfectadas  = objPrepare.executeUpdate();
+            System.out.println(lineasAfectadas);
             if (lineasAfectadas > 0){
 
                 isUpdated= true;
@@ -99,6 +101,7 @@ public class ModelProducto implements CRUDProducto {
 
 
             objPrepare.setInt(1, objMolde.getID_Producto());
+            System.out.println(objMolde.getID_Producto());
 
             int totalAfectado = objPrepare.executeUpdate();
 
@@ -142,7 +145,7 @@ public class ModelProducto implements CRUDProducto {
                 objTienda.setNombreTienda(objResult.getString("Tienda.nombreTienda"));
                 objTienda.setUbicacion(objResult.getString("Tienda.ubicacion"));
 
-                objMolde.getEntidadTienda(objTienda);
+                objMolde.setEntidadTienda(objTienda);
 
                 listaProducto.add(objMolde);
             }
@@ -179,7 +182,7 @@ public class ModelProducto implements CRUDProducto {
                 objTienda.setNombreTienda(objResult.getString("Tienda.nombreTienda"));
                 objTienda.setUbicacion(objResult.getString("Tienda.ubicacion"));
 
-                objMolde.getEntidadTienda(objTienda);
+                objMolde.setEntidadTienda(objTienda);
 
                 listaProducto.add(objMolde);
             }
